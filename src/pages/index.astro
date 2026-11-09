@@ -20,98 +20,29 @@ import Discord from "../icons/Social/Discord.astro";
 import Section_certificados from "../components/Section_certificados.astro";
 ---
 
-<Layout
-	title="Portfolio de Rodriguez - Programador Full-Stack"
-	description="Mi objetivo es aprender y mejorar constantemente, participando en proyectos innovadores que me permitan ampliar mis conocimientos y aportar soluciones creativas y efectivas."
->
-	<main class="px-4">
+<Layout title="Alejo Rodríguez | Programador Full-Stack" description="Portafolio de Alejo Rodríguez, programador Full-Stack de Tucumán, Argentina. Proyectos web, automatización, IA y sistemas de gestión.">
+	<a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-black" href="#contenido">Saltar al contenido</a>
+	<main id="top" class="px-4">
 		<Section>
-			<img
-				class="rounded-full w-20 h-20 mb-4"
-				src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHY5M3prNjdmdXV0YmVtMmlxNGNtc3pwNXplOGViMXl0cGFuc3JuNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fc4CgGnZOktRm/giphy.gif"
-				alt="Pietro"
-			/>
-			<h1
-				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-5 pb-6 lg:pb-10"
-			>
-				Hola, Soy Alejo
-				<a
-					href="www.linkedin.com/in/alejo-rodriguez-43b561387"
-					target="_blank"
-					rel="noopener"
-				>
-					<div
-						class="flex justify-center items-center hover:scale-110 transition"
-					>
-						<Badge> Open To Work </Badge>
-					</div><a></a></a
-				>
-				<h2
-					class="text-xl lg:text-2xl opacity-80 text-pretty max-w-{700px}"
-				>
-					<span class="text-blue-300">Programador Full-Stack.</span>
-					<br />Tengo 24 años, soy de Tucumán, Argentina 🧉. Me
-					especializo en tecnología y desarrollo de software, siempre
-					buscando aprender y mejorar. Mi objetivo es participar en
-					proyectos innovadores que amplíen mis conocimientos y
-					permitan aportar soluciones creativas y efectivas.
-				</h2>
-				<nav class="flex gap-x-5 mt-6 flex-wrap">
-					<Social_icons
-						href="www.linkedin.com/in/alejo-rodriguez-43b561387"
-					>
-						<Linkedin class="size-4 md:size-6" />
-						LinkedIn
-					</Social_icons>
-					<Social_icons href="https://github.com/Alejopiola21">
-						<Github class="size-4 md:size-6" />
-						GitHub
-					</Social_icons>
-					<Social_icons href="rodaleagu@gmail.com">
-						<Gmail class="size-4 md:size-6" />
-						rodaleagu@gmail.com
-					</Social_icons>
-					<Social_icons
-						href="https://discord.com/users/222491467275436033"
-					>
-						<Discord class="size-4 md:size-6" />
-						x_alejo_x
-					</Social_icons>
+			<div id="contenido">
+				<img class="mb-4 size-20 rounded-full" src="/alejo-avatar.gif" alt="Avatar animado de Alejo Rodríguez" width="80" height="80" />
+				<div class="flex flex-wrap items-center gap-x-5 gap-y-2 pb-6 lg:pb-10">
+					<h1 class="text-3xl font-bold text-white md:text-4xl lg:text-5xl">Hola, soy Alejo</h1>
+					<a class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300" href="https://www.linkedin.com/in/alejo-rodriguez-43b561387" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de LinkedIn de Alejo Rodríguez"><Badge>Open To Work</Badge></a>
+				</div>
+				<h2 class="max-w-[700px] text-xl opacity-80 text-pretty lg:text-2xl"><span class="text-blue-300">Programador Full-Stack.</span><br />Tengo 25 años, soy de Tucumán, Argentina 🧉. Me especializo en tecnología y desarrollo de software, siempre buscando aprender y mejorar. Mi objetivo es participar en proyectos innovadores que amplíen mis conocimientos y permitan aportar soluciones creativas y efectivas.</h2>
+				<nav class="mt-6 flex flex-wrap gap-3 md:gap-5" aria-label="Perfiles y contacto">
+					<Social_icons href="https://www.linkedin.com/in/alejo-rodriguez-43b561387"><Linkedin class="size-4 md:size-6" />LinkedIn</Social_icons>
+					<Social_icons href="https://github.com/Alejor-Dev"><Github class="size-4 md:size-6" />GitHub</Social_icons>
+					<Social_icons href="mailto:rodaleagu@gmail.com"><Gmail class="size-4 md:size-6" />rodaleagu@gmail.com</Social_icons>
+					<Social_icons href="https://discord.com/users/222491467275436033"><Discord class="size-4 md:size-6" />x_alejo_x</Social_icons>
 				</nav>
-			</h1>
-			<Section_tecno id="tecnologias">
-				<Tecnologias />
-			</Section_tecno>
-			<Section id="proyectos">
-				<div class="flex justify-center">
-					<h2
-						class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"
-					>
-						<Code class="size-8" />Proyectos
-					</h2>
-				</div>
-				<Proyectos />
-			</Section>
-			<Section_certificados id="certificados">
-				<div class="flex justify-center">
-					<h2
-						class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"
-					>
-						<Cert_icon class="size-8" />Certificados
-					</h2>
-				</div>
-				<Certificados />
-			</Section_certificados>
-			<Section_sobremi id="sobre_mi">
-				<div class="flex justify-center">
-					<h2
-						class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"
-					>
-						<Me_icons class="size-8" />Sobre mí
-					</h2>
-				</div>
-				<Sobre_mi />
-			</Section_sobremi>
+				<div class="mt-6 flex flex-wrap gap-3"><a class="rounded-full bg-blue-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white" href="mailto:rodaleagu@gmail.com">Contactarme</a><a class="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300" href="#proyectos">Ver proyectos</a></div>
+			</div>
+			<Section_tecno id="tecnologias"><Tecnologias /></Section_tecno>
+			<Section id="proyectos"><div class="flex justify-center"><h2 class="mb-4 flex items-center gap-x-3 pb-10 text-center text-4xl font-semibold"><Code class="size-8" />Proyectos</h2></div><Proyectos /></Section>
+			<Section_certificados id="certificados"><div class="flex justify-center"><h2 class="mb-4 flex items-center gap-x-3 pb-10 text-center text-4xl font-semibold"><Cert_icon class="size-8" />Certificados</h2></div><Certificados /></Section_certificados>
+			<Section_sobremi id="sobre_mi"><div class="flex justify-center"><h2 class="mb-4 flex items-center gap-x-3 pb-10 text-center text-4xl font-semibold"><Me_icons class="size-8" />Sobre mí</h2></div><Sobre_mi /></Section_sobremi>
 			<Footer />
 		</Section>
 	</main>

@@ -5,6 +5,7 @@ import Js from "../icons/Tecnologias/Lenguajes/Js.astro";
 import React from "../icons/Tecnologias/Frameworks_Librerias/React.astro";
 import Node from "../icons/Tecnologias/Frameworks_Librerias/Node.astro";
 import Express from "../icons/Tecnologias/Frameworks_Librerias/Express.astro";
+import Tailwind from "../icons/Tecnologias/Frameworks_Librerias/Tailwind.astro";
 import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
 import Link from "../icons/Social/Link.astro";
@@ -40,6 +41,11 @@ const TAGS = {
     class: "bg-[#2b2b2b] text-white",
     icon: Express,
   },
+  Tailwind: {
+    name: "Tailwind CSS",
+    class: "bg-[#0f596d] text-white",
+    icon: Tailwind,
+  },
 };
 
 const PROJECTS = [
@@ -47,7 +53,6 @@ const PROJECTS = [
     title: "Ahorro Tuc",
     description:
       "Plataforma web para la optimización de compras en supermercados con algoritmos de carrito híbrido e historial de precios.",
-    link: "#",
     github: "https://github.com/Alejor-Dev/Project-Ahorro-Tuc",
     image: "/projects/image.png",
     tags: [TAGS.React, TAGS.Js, TAGS.Html, TAGS.Css],
@@ -56,43 +61,14 @@ const PROJECTS = [
     title: "OmnySys",
     description:
       "Sistema de gestión integral y plataforma escalable enfocada en el rendimiento y la administración de recursos.",
-    link: "#",
     github: "https://github.com/Alejor-Dev/OmnySys",
-    image: "Interfaz en Desarrollo",
+    image: "/projects/omnysys.png",
     tags: [TAGS.React, TAGS.Js, TAGS.Html, TAGS.Css],
-  },
-  {
-    title: "Gokywebs",
-    description:
-      "Agencia de desarrollo web. Creación de plataformas, landing pages y gestión digital para potenciar negocios online.",
-    link: "https://gokywebs.net",
-    github: "#",
-    image: "/projects/Screenshot_22-4-2026_132647_gokywebs.net.jpeg",
-    tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.React],
-  },
-  {
-    title: "Empresa Ficticia - Pagina informativa",
-    description:
-      "Trabajo final de la materia programacion II. Se utilizo Html, Css, JS y React. Tuvo funciones como ChatBot y un sistema de turnos",
-    link: "#",
-    github: "https://github.com/Pietro923/Programacion",
-    image: "/projects/proyecto1.webp",
-    tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.React],
-  },
-  {
-    title: "Aplicacion del Clima",
-    description:
-      "Pagina creada con el objetivo de usar API del clima y probar su funcionamiento. Se utilizo Html, Css y JS",
-    link: "#",
-    github: "https://github.com/Pietro923/api-del-clima",
-    image: "/projects/proyecto2.webp",
-    tags: [TAGS.Html, TAGS.Css, TAGS.Js],
   },
   {
     title: "MSSR",
     description:
-      "Motor de routing semántico de agentes: gestiona skills y contexto por proyecto, con trazas observables del ciclo de vida de cada tarea.",
-    link: "https://github.com/Alejor-Dev/MSSR",
+      "Motor de routing semántico de agentes que gestiona skills y contexto por proyecto, con trazas observables del ciclo de vida de cada tarea.",
     github: "https://github.com/Alejor-Dev/MSSR",
     image: "/projects/mssr.png",
     tags: [TAGS.Node, TAGS.Js, TAGS.Express],
@@ -101,10 +77,73 @@ const PROJECTS = [
     title: "Bot de Finanzas",
     description:
       "Bot de WhatsApp que registra gastos mediante chat y genera reportes semanales o mensuales, con backend en Node/Express y procesamiento con IA.",
-    link: "https://github.com/Alejor-Dev/Bot_Finanzas",
     github: "https://github.com/Alejor-Dev/Bot_Finanzas",
     image: "/projects/bot-finanzas.png",
     tags: [TAGS.Node, TAGS.Express, TAGS.Js],
+  },
+  {
+    title: "BarberON",
+    description:
+      "Plataforma B2B de reservas online para barberías y peluquerías, con agenda centralizada y gestión de citas.",
+    github: "https://github.com/Alejor-Dev/BarberOn",
+    image: "/projects/barberon.png",
+    tags: [TAGS.React, TAGS.Js, TAGS.Tailwind],
+  },
+  {
+    title: "PlaneAR",
+    description:
+      "Plataforma SaaS para organizar eventos, gestionar invitados, confirmar asistencia y consultar estadísticas.",
+    github: "https://github.com/Alejor-Dev/Plane_AR",
+    image: "/projects/planear.png",
+    tags: [TAGS.React, TAGS.Js, TAGS.Tailwind],
+  },
+  {
+    title: "CV-Perfecto AR",
+    description:
+      "SaaS con IA para optimizar currículums y perfiles de LinkedIn para filtros ATS, adaptado al mercado laboral argentino.",
+    github: "https://github.com/Alejor-Dev/Proyect-CV-IA",
+    image: "/projects/cv-perfecto.png",
+    tags: [TAGS.React, TAGS.Js, TAGS.Tailwind],
+  },
+  {
+    title: "Remote Control HUB",
+    description:
+      "Aplicación web que permite utilizar un teléfono como control remoto de una computadora mediante una PWA y WebSockets.",
+    github: "https://github.com/Alejor-Dev/Remote-Control-HUB",
+    image: "/projects/remote-control-hub.jpg",
+    tags: [TAGS.Node, TAGS.Express, TAGS.Js],
+  },
+  {
+    title: "Caracola",
+    description:
+      "Sistema integral de gestión comercial con PostgreSQL, aplicación de escritorio para Windows y acceso web/PWA seguro.",
+    github: "https://github.com/Alejor-Dev/Sistema-para-Caracola",
+    image: "/projects/caracola.svg",
+    tags: [TAGS.React, TAGS.Node, TAGS.Js],
+  },
+  {
+    title: "Gokywebs",
+    description:
+      "Agencia de desarrollo web. Creación de plataformas, landing pages y gestión digital para potenciar negocios online.",
+    link: "https://gokywebs.net",
+    image: "/projects/Screenshot_22-4-2026_132647_gokywebs.net.jpeg",
+    tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.React],
+  },
+  {
+    title: "Empresa Ficticia - Pagina informativa",
+    description:
+      "Trabajo final de la materia programacion II. Se utilizo Html, Css, JS y React. Tuvo funciones como ChatBot y un sistema de turnos",
+    github: "https://github.com/Pietro923/Programacion",
+    image: "/projects/proyecto1.webp",
+    tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.React],
+  },
+  {
+    title: "Aplicacion del Clima",
+    description:
+      "Pagina creada con el objetivo de usar API del clima y probar su funcionamiento. Se utilizo Html, Css y JS",
+    github: "https://github.com/Pietro923/api-del-clima",
+    image: "/projects/proyecto2.webp",
+    tags: [TAGS.Html, TAGS.Css, TAGS.Js],
   },
 ];
 ---
@@ -116,8 +155,11 @@ const PROJECTS = [
         <div class="w-full md:w-1/2 flex items-center group">
           <div class="relative flex flex-col items-center transition duration-500 ease-in-out transform shadow-xl overflow-hidden rounded-xl sm:rounded-xl lg:border lg:border-gray-800 group-hover:shadow-2xl">
             <img
-              alt="Captura del Proyecto"
-              class="object-cover object-top w-full h-full transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              alt={`Vista previa del proyecto ${title}`}
+              width="800"
+              height="450"
+              decoding="async"
+              class="object-cover object-top w-full h-full transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105 motion-reduce:transform-none"
               loading="lazy"
               src={image}
             />
